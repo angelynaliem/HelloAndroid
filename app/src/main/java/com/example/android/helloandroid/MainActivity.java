@@ -16,14 +16,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToWeb(View view) {
-        String url = "http://www.udacity.com";
+        String url = getString(R.string.udacity_website);
 
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
-    }
-
-    public void goToAndroidApp(View view) {
-
     }
 }

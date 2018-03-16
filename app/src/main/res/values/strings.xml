@@ -4,5 +4,5 @@
     <string name="phone">650 555 5555</string>
     <string name="students_first">Students First</string>
     <string name="web">Udacity website</string>
-    <string name="download">Download the Android App today</string>
+    <string name="udacity_website">http://www.udacity.com</string>
 </resources>

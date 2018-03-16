@@ -7,31 +7,24 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@color/background"
         android:focusable="true">
 
-        <com.google.android.youtube.player.YouTubePlayerView
-            android:id="@+id/youtube"
+        <ImageView
+            android:id="@+id/image_one"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/play_video"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/youtube"
-            android:layout_centerInParent="true"
-            android:background="@drawable/youtube" />
+            android:layout_height="@dimen/main_height"
+            android:contentDescription="@string/students_first"
+            android:scaleType="centerCrop"
+            android:src="@drawable/studentsfirst" />
 
         <ImageButton
             android:id="@+id/image_two"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/play_video"
+            android:layout_below="@id/image_one"
             android:adjustViewBounds="true"
             android:contentDescription="@string/web"
             android:maxHeight="@dimen/max_height"
@@ -64,14 +57,6 @@
             android:drawablePadding="10dp"
             android:text="@string/phone"
             android:textSize="@dimen/text_size" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_two"
-            android:layout_centerHorizontal="true"
-            android:onClick="goToAndroidApp"
-            android:text="@string/download" />
 
     </RelativeLayout>
 
