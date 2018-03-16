@@ -40,7 +40,7 @@
             android:layout_marginLeft="@dimen/margin_left_submain"
             android:autoLink="map"
             android:drawableLeft="@drawable/locationpin"
-            android:drawablePadding="10dp"
+            android:drawablePadding="@dimen/padding_size"
             android:text="@string/address"
             android:textSize="@dimen/text_size" />
 
@@ -54,7 +54,7 @@
             android:layout_marginTop="@dimen/margin_top_medium"
             android:autoLink="phone"
             android:drawableLeft="@drawable/phonereceiver"
-            android:drawablePadding="10dp"
+            android:drawablePadding="@dimen/padding_size"
             android:text="@string/phone"
             android:textSize="@dimen/text_size" />
 
